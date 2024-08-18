@@ -1,0 +1,100 @@
+/* General Body Styling */
+body {
+     font-family: Arial, sans-serif;
+     background-color: #f4f4f4;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     height: 100vh;
+     justify-content: center;
+}
+
+/* Container Styling */
+.container {
+     width: 100%;
+     max-width: 800px;
+     padding: 20px;
+     background-color: #fff;
+     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+     text-align: center;
+}
+
+/* Header Styling */
+h1 {
+     font-size: 36px;
+     margin-bottom: 20px;
+     color: #333;
+}
+
+/* Section Styling */
+.upload-section,
+.submit-section,
+.result-section {
+     margin-bottom: 20px;
+}
+
+/* Label Styling */
+label {
+     font-size: 18px;
+     margin-right: 10px;
+     color: #333;
+}
+
+/* File Input Styling */
+input[type="file"] {
+     padding: 5px;
+     font-size: 14px;
+     cursor: pointer;
+}
+
+/* Button Styling */
+button {
+     padding: 12px 25px;
+     background-color: #007bff;
+     color: #fff;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 18px;
+}
+
+button:hover {
+     background-color: #0056b3;
+}
+
+/* Result Section Styling */
+.result-section h2 {
+     font-size: 24px;
+     margin-bottom: 15px;
+     color: #333;
+}
+
+/* Uploaded Image Styling */
+.uploaded-image {
+     width: 250px;
+     height: auto;
+     border-radius: 5px;
+     margin-bottom: 15px;
+}
+
+/* Result Box Styling */
+.result-box {
+     background-color: #d4edda;
+     padding: 30px;
+     box-sizing: border-box;
+     border-radius: 5px;
+     text-align: left;
+     margin: 20px auto;
+     border: 1px solid #c3e6cb;
+     width: 80%;
+     max-width: 600px;
+}
+
+.result-box p {
+     margin: 10px 0;
+     font-size: 18px;
+     color: #155724;
+}

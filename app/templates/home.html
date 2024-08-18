@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculate App</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bmi_predictor/styles.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>BMI Calculate App</h1>
+
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <div class="upload-section">
+                <label for="image-upload">Upload Image:</label>
+                <input type="file" name="image" id="image-upload" required>
+            </div>
+            <div class="submit-section">
+                <button type="submit">Calculate BMI</button>
+            </div>
+        </form>
+
+        {% if uploaded_file_url %}
+        <div class="result-section">
+            <h2>Uploaded Image:</h2>
+            <img src="{{ uploaded_file_url }}" alt="Uploaded Image" class="uploaded-image">
+
+            <h2>Results:</h2>
+            <div class="result-box">
+                <p><strong>Height:</strong> {{ height }} cm</p>
+                <p><strong>Weight:</strong> {{ weight }} kg</p>
+                <p><strong>BMI:</strong> {{ bmi }}</p>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
